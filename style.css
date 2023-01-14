@@ -1,3 +1,23 @@
+body{
+  background-color: gray;
+  font-family: courier new;
+}
+
+p{
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  line-height: 2.0;
+}
+
+img{
+  width: 20%;
+  height: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -6,19 +26,33 @@ ul {
     background-color: #333;
   }
   
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-  }
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.section_head{
+  font-size: 40px;
+  font-family: courier new;
+  font-weight: bold;
+  text-align: center;
+}
+
+hr{
+  width: 50%;
+}
+
+
+  /*skills circle css*/
