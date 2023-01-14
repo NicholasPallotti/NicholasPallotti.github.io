@@ -56,5 +56,32 @@ hr{
   width: 50%;
 }
 
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
 
-  /*skills circle css*/
+/* Container for skill bars */
+.container {
+  width: 40%;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  padding-top: 5px;
+  border-radius: 10px; 
+  padding-bottom: 5px; 
+}
+
+.html {width: 50%; background-color: darkslategray;} 
+.css {width: 30%; background-color: darkslategray;} 
+.js {width: 20%; background-color: darkslategray;} 
+.java {width: 80%; background-color: darkslategray;} 
+.python {width: 75%; background-color: darkslategray;}
+.cplus {width: 90%; background-color: darkslategray;} 
+.csharp {width: 65%; background-color: darkslategray;} 
+.agile {width: 80%; background-color: darkslategray;} 
+.oop {width: 90%; background-color: darkslategray;} 
+.linux {width: 75%; background-color: darkslategray;} 
+.git {width: 70%; background-color: darkslategray;} 
