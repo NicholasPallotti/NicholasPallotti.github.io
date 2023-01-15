@@ -8,6 +8,7 @@ p{
   margin-left: 25%;
   margin-right: 25%;
   line-height: 2.0;
+  font-weight: 500;
 }
 
 img{
@@ -52,8 +53,12 @@ li a:hover {
   text-align: center;
 }
 
+.section{
+  background-color: rgb(83, 82, 82);
+}
+
 hr{
-  width: 50%;
+  width: 30%;
 }
 
 /* Make sure that padding behaves as expected */
