@@ -1,5 +1,5 @@
 body{
-  background-color: gray;
+  background-color: rgb(158, 157, 157);
   font-family: courier new;
 }
 
@@ -24,63 +24,34 @@ img{
 .nav-container{
   display: flex;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   top: 0px;
   background-color: white;
-  opacity: 50%;
+  opacity: 75%;
+  left: 0;
+  width: 100%;
 }
 
 .right-side, .left-side{
   list-style-type: none;
+  padding-right: 1%;
+  padding-left: 1%;
+  font-weight: bolder;
+  
 }
 
-.right-side li, .left-side li{
+.right-side li{
   display: inline-block;
 }
 
-.right-side a, .left-side a{
+.right-side a{
   text-decoration: none;
   display: block;
 }
-/*
-.topnav {
-  text-align: right;
-  position: sticky;
-  top: 10px;
-}
 
-.topnav a{
-  font-size: 25px;
-  padding:  10px 10px;
-  color: black;
-  text-decoration: none; 
+hr{
+  width:25%;
 }
-
-
-.name {
-  font-size: 25px;
-  padding:  10px 10px;
-  color: black;
-  text-decoration: none; 
-  text-align: right;
-}
-
-.navbar{
-  position: sticky;
-  top: 10px;
-  text-align: right;
-  display: flex;
-  justify-content: space-between;
-}
-
-.navbar a{
-  font-size: 25px;
-  padding:  10px 10px;
-  color: black;
-  text-decoration: none; 
-  text-align: left;
-}
-*/
 
 .section_head{
   font-size: 40px;
@@ -88,6 +59,4 @@ img{
   font-weight: bold;
   text-align: center;
 }
-
-
 
