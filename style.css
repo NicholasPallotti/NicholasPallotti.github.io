@@ -60,3 +60,44 @@ hr{
   text-align: center;
 }
 
+
+
+.skills_container{
+  display: flex;
+}
+
+.logo_container {
+  background-color: blue;
+  display:flex;
+  height: 200px;
+  width: 200px;
+
+  margin: 25px
+
+}
+
+.child {
+  transition: transform 1s ease-in;
+  
+}
+
+.child img{
+  object-fit: cover;
+}
+
+.logo_container:hover .child {
+  
+  animation: bounce 1s ease-in forwards infinite;
+}
+
+@keyframes bounce {
+  0%{
+    transform:translateY(0);
+  }
+  50%{
+    transform:translateY(100%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
