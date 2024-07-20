@@ -5,8 +5,8 @@ body{
 
 p{
   text-align: center;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 15%;
+  margin-right: 15%;
   line-height: 2.0;
   font-weight: 500;
 }
@@ -40,12 +40,13 @@ img{
   
 }
 
-.right-side li{
+.left-side li{
   display: inline-block;
 }
 
-.right-side a{
+.left-side, a{
   text-decoration: none;
+  color:black;
   display: block;
 }
 
