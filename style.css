@@ -1,3 +1,4 @@
+/* gneeral stuff */
 body{
   background-color: rgb(158, 157, 157);
   font-family: courier new;
@@ -11,6 +12,17 @@ p{
   font-weight: 500;
 }
 
+hr{
+  width:25%;
+}
+
+.section_head{
+  font-size: 40px;
+  font-family: courier new;
+  font-weight: bold;
+  text-align: center;
+}
+
 img{
   width: 20%;
   height: 20%;
@@ -21,6 +33,7 @@ img{
   padding-bottom: 2.5%;
 }
 
+/* Navigation bar */
 .nav-container{
   display: flex;
   justify-content: space-between;
@@ -50,17 +63,7 @@ img{
   display: block;
 }
 
-hr{
-  width:25%;
-}
-
-.section_head{
-  font-size: 40px;
-  font-family: courier new;
-  font-weight: bold;
-  text-align: center;
-}
-
+/* Skills section CSS */
 .skills_container{
   display: flex;
   justify-content: center;
@@ -89,4 +92,11 @@ hr{
   100%{
     transform: translateY(-70px);
   }
+}
+
+/* Projects CSS */
+.projects_wrapper{
+  border-style: solid;
+  border-radius: 10px;
+  margin:10px;
 }
