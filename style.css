@@ -95,8 +95,35 @@ img{
 }
 
 /* Projects CSS */
+.project_title{
+  text-align: center;
+  font-weight: bold;
+}
+
 .projects_wrapper{
   border-style: solid;
   border-radius: 10px;
   margin:10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects_description{
+  border-style: solid;
+  border-radius: 10px;
+  margin:10px;
+  justify-content: left;
+}
+
+.projects_img{
+  border-style: solid;
+  border-radius: 10px;
+  margin:10px;
+  justify-content: right;
+}
+
+.p1{
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
 }
