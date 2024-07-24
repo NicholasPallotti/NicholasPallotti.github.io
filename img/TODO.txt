@@ -1,2 +1,4 @@
 - add resume (possibly with links)
 - add images to projects
+- fix bounce animation, remove -y axis movement
+- fix links to sections in nav bar to move to above titles so titles are not overlapping nav bar
