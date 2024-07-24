@@ -45,15 +45,27 @@ img{
   width: 100%;
 }
 
-.right-side, .left-side{
+.right-side, .left-side, .links{
   list-style-type: none;
   padding-right: 1%;
   padding-left: 1%;
   font-weight: bolder;
 }
 
-.left-side li{
+.left-side, li{
   display: inline-block;
+}
+
+.links, li{
+  display: inline-block;
+}
+
+.links a{
+  display: block;
+  color:blue;
+  padding-left:15px;
+  padding-right:15px;
+  justify-content: center;
 }
 
 .left-side, a{
