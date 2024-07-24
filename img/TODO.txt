@@ -1,3 +1,2 @@
-- add hover labels to skills/frameworks/tools icons
 - add resume (possibly with links)
 - add images to projects
