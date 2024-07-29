@@ -114,7 +114,6 @@ img{
 .projects_wrapper{
   border-style: solid;
   border-radius: 50px;
-  /*margin: 0;*/
   margin-inline: auto;
   display: flex;
   justify-content: space-between;
@@ -133,6 +132,7 @@ img{
   margin:10px;
   justify-content: right;
   width: 25%;
+  display: flex;
 }
 
 .p1{
