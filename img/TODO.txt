@@ -1,3 +1,5 @@
-- add resume (possibly with links)
+- add resume
+    -underneath profile picture
+    -button, drop down?
 - add mobile design
 - add more *pzzaz*
