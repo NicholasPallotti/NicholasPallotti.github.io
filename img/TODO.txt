@@ -1,7 +1,3 @@
 - add resume (possibly with links)
-- add images to projects
-- add more visually astetic way to display langauges and frameworks used in projects (icons?)
-- fix bounce animation, remove -y axis movement
-- fix links to sections in nav bar to move to above titles so titles are not overlapping nav bar
 - add mobile design
 - add more *pzzaz*

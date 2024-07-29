@@ -130,7 +130,7 @@ img{
 
 .projects_img{
   margin:10px;
-  justify-content: right;
+  justify-content: center;
   width: 25%;
   display: flex;
 }
