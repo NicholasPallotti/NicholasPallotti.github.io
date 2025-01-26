@@ -1,77 +1,261 @@
-/* gneeral stuff */
-body{
-  background-color: rgb(158, 157, 157);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.key {
+  font-size: 2vw;
+  display: inline-block;
+  letter-spacing: .5vw;
+  transition: transform 0.2s;
 }
 
-p{
+@keyframes pressDown1 {
+  30%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  35% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes pressDown2 {
+  70%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes pressDown3 {
+  30%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  35% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes pressDown4 {
+  40%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+  45% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes pressDown5 {
+  20%,
+  30%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes pressDown6 {
+  60%,
+  70%,
+  100% {
+    transform: translateY(0);
+  }
+  65% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes pressDown7 {
+  10%,
+  20%,
+  100% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: translateY(10px);
+  }
+}
+
+
+
+.key:nth-child(1) {
+  animation: pressDown1 2s infinite;
+}
+
+.key:nth-child(2) {
+  animation: pressDown2 3s infinite;
+}
+
+.key:nth-child(3) {
+  animation: pressDown3 4s infinite;
+}
+
+.key:nth-child(4) {
+  animation: pressDown4 2.5s infinite;
+}
+
+.key:nth-child(5) {
+  animation: pressDown5 2.5s infinite;
+}
+
+.key:nth-child(6) {
+  animation: pressDown6 3.5s infinite;
+}
+
+.key:nth-child(7) {
+  animation: pressDown7 2.2s infinite;
+}
+
+
+.arrow{
+  font-size: 3rem;
+  display: inline-block; 
   text-align: center;
-  margin-left: 15%;
-  margin-right: 15%;
-  line-height: 2.0;
+  max-width: fit-content;
+
+}
+
+.arrow:hover{
+  transform: scale(1.5);
+}
+
+.skill{
+  border: 3px solid black;
+  border-radius: 40%;
+  max-width: fit-content;
+  padding: 15px;
+  margin:10px;
+  display: inline-block; 
+}
+
+.nav{
+  display: inline-block; 
+  text-align: center;
+  line-height: 1.6;
+}
+
+.nav a:hover{
+  transform: scale(1.5);
+}
+
+/* socials icons */
+.socials{
+  display:inline-flex;
+  padding: 2vh;
+}
+
+.socials i{
+font-size: 3rem;
+}
+
+/*2 column format */
+.left {
+
+  background: linear-gradient(to right, blue, pink);
+  
+  width: 40vw;
+  position: fixed;
+
+  justify-content: center;
+  align-content:center;
+  text-align: center;
+
+}
+
+.right {
+  
+  /*background: linear-gradient(to left, blue, pink);*/
+  background: 
+ linear-gradient(0deg, transparent 0%, pink 100%),
+  linear-gradient(90deg, pink 0%, blue 100%);
+
+  float:right;
+  width: 60vw;
+  justify-content: center;
+  align-content:center;
+  text-align: center;
+
+}
+
+/* general stuff */
+body{
+  font-family: LibreBaskerville-Regular, Palatino Linotype, Times New Roman, serif;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+
+}
+
+html{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+p{ 
+  margin-left: 5vw;
+  margin-right: 5vw;
+  line-height: 1.75;
   font-weight: 500;
+  font-size: larger;
 }
 
 hr{
-  width:25%;
+  width:25vw;
 }
 
-.section_head{
+.skills{
+  height : 100vh ;
+  align-content:center;
+  scroll-snap-align: start;
+}
+
+.about{
+  height : 100vh ;
+  align-content:center;
+  scroll-snap-align: start;
+}
+
+.projects{
+  height : 100vh ;
+  align-content:center;
+  scroll-snap-align: start;
+}
+
+.section{
+  height : 100vh ;
+  max-height: 100vh;
+  align-content:center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  margin: 0;
+}
+
+
+.section-title{
   font-size: 40px;
   font-family: courier new;
   font-weight: bold;
   text-align: center;
 }
 
-img{
-  width: 20%;
-  height: 20%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
+.section-body{
+  display: inline-block; 
+  text-align: left;
+  padding: 1h;
 }
 
-/* Navigation bar */
-.nav-container{
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  top: 0px;
-  background-color: white;
-  opacity: 75%;
-  left: 0;
-  width: 100%;
-}
 
-.right-side, .left-side, .links{
-  list-style-type: none;
-  padding-right: 1%;
-  padding-left: 1%;
-  font-weight: bolder;
-}
-
-.left-side, li{
-  display: inline-block;
-}
-
-.links, li{
-  display: inline-block;
-}
-
-.links a{
-  display: block;
-  color:blue;
-  padding-left:15px;
-  padding-right:15px;
-  justify-content: center;
-}
-
-.left-side, a{
+a{
   text-decoration: none;
-  color:black;
-  display: block;
+  color:rgb(0, 0, 0);
+  display:block;
 }
 
 /* Skills section CSS */
@@ -89,20 +273,6 @@ img{
   align-items: center;
   border-radius: 50%;
   margin: 5px;
-}
-
-.icon:hover{
-  animation: bounce .4s cubic-bezier(0.59, -0.67, 0.24, 0.79) 2;
-  animation-direction: alternate;
-}
-
-@keyframes bounce{
-  0%{
-    transform: translateY(0);
-  }
-  100%{
-    transform: translateY(-70px);
-  }
 }
 
 /* Projects CSS */
@@ -140,63 +310,3 @@ img{
   margin-left: 5%;
   margin-right: 5%;
 }
-
-
-.devicon-javascript-plain{
-  font-size: 2rem
-}
-.devicon-python-plain{
-  font-size: 2rem
-}
-.devicon-c-plain{
-  font-size: 2rem
-}
-.devicon-html5-plain{
-  font-size: 2rem
-}
-.devicon-css3-plain{
-  font-size: 2rem
-}
-.devicon-csharp-plain{
-  font-size: 2rem
-}
-.devicon-java-plain{
-  font-size: 2rem
-}
-.devicon-azuresqldatabase-plain{
-  font-size: 2rem
-}
-.devicon-bash-plain{
-  font-size: 2rem
-}
-.devicon-tensorflow-plain{
-  font-size: 2rem
-}
-.devicon-pandas-plain{
-  font-size: 2rem
-}
-.devicon-numpy-plain{
-  font-size: 2rem
-}
-.devicon-docker-plain{
-  font-size: 2rem
-}
-.devicon-github-plain{
-  font-size: 2rem
-}
-.devicon-mongodb-plain{
-  font-size: 2rem
-}
-.devicon-flask-original{
-  font-size: 2rem
-}
-.devicon-xml-plain{
-  font-size: 2rem
-}
-.devicon-dotnetcore-plain{
-  font-size: 2rem
-}
-.devicon-cplusplus-plain{
-  font-size: 2rem
-}
-
