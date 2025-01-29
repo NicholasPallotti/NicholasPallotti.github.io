@@ -115,10 +115,12 @@
 
 /*arrow animation*/
 .arrow{
+  padding: 0;
   font-size: 3rem;
   display: inline-block; 
   text-align: center;
   max-width: fit-content;
+  max-height: fit-content;
   animation: arrow-animation 3s linear infinite;
 }
 
@@ -296,34 +298,26 @@ a{
 .project_title{
   text-align: center;
   font-weight: bold;
+  font-size: larger;
 }
 
 .projects_wrapper{
   border-style: solid;
   border-radius: 50px;
-  margin-inline: auto;
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
+  margin-top: 2vh;
+  margin-right: 1vh;
+  
+  display: inline-flex;
+  
+  width: 25vw;
+  height:35vh;
   padding-top: 0;
   padding-bottom: 0;
 }
 
 .projects_description{
   margin:10px;
-  justify-content: left;
-  width: 75%;
-}
-
-.projects_img{
-  margin:10px;
   justify-content: center;
-  width: 25%;
-  display: flex;
+  text-align: center;
 }
 
-.p1{
-  text-align: center;
-  margin-left: 5%;
-  margin-right: 5%;
-}
