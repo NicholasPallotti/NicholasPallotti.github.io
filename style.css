@@ -260,7 +260,28 @@ hr{
   width:25vw;
 }
 
+.experience{
+  height : 100vh ;
+  max-width: 55vw;
+  padding-left: 5vh;
+  align-content:center;
+  scroll-snap-align: start;
+}
 
+.experience-container{  
+  padding-left: 1rem;
+  margin:2vh;
+  border-left: .25rem solid black;
+}
+
+.experience ul{
+  line-height: 2rem;
+  font-size: large;
+}
+
+.experience h1{
+  font-size: x-large;
+}
 
 .about{
   height : 100vh ;
